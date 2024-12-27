@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Buddy!</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - Animation On Scroll
+  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="assets\images\logo.png">
+      </a>
+
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="programs.html" class="navbar-link" data-nav-link>Programs</a>
+          </li>
+
+          <li>
+            <a href="pricing.html" class="navbar-link" data-nav-link>Pricing</a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61559908066456" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="home.html" class="btn btn-secondary">Join Now</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero dark-bg has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle" data-aos="flip-up" data-aos-delay="200" data-aos-duration="1000">
+              <strong class="strong" >The Best</strong>Fitness Club
+            </p>
+
+            <h1 class="h1 hero-title" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">Build Your Body</h1>
+
+            <p class="section-text" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+              It doesnt matter if your goal is to get stronger, bum fat, or to just stay fit our programs will guide you every step of the way.
+            </p>
+
+            <a href="bmiCalc.html" class="btn btn-primary" data-aos="flip-up" data-aos-delay="800" data-aos-duration="1000">Calculate your BMI</a>
+
+          </div>
+
+          <div class="hero-banner" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="2000">
+
+            <a href="https://olympics.com/en/news/weightlifter-hidilyn-diaz-wins-first-ever-olympic-gold-for-philippines" target="blank"><img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100"></a>
+
+            <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
+
+            <img src="./assets/images/heart-rate.svg" width="255" height="270" alt="heart rate"
+              class="abs-img abs-img-1">
+            <img src="./assets/images/calories.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+          <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="2000">
+            <a href="https://www.rappler.com/sports/carlos-yulo-dreams-competing-with-sibling-olympics/" target="_blank"><img src="./assets/images/about-banner.png" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100"></a>
+
+            <img src="./assets/images/hero-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2">
+
+            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100">
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1500">About Us</p>
+
+            <h2 class="h2 section-title" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500">Welcome To Gym Buddy!</h2>
+
+            <p class="section-text" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+              The purpose of “Gym Buddy!” is to empower every member on their journey to improved health and fitness by giving guidance and motivation in a supportive community-based environment. Also, to provide high-quality, affordable gym services. 
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+            <!-- 
+        - #CLASS
+      -->
+
+      <section class="section class dark-bg has-bg-image" id="class" aria-label="class"
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
+
+          <p class="section-subtitle" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1500">Our Classes</p>
+
+          <h2 class="h2 section-title text-center" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500">Fitness Classes For Every Goal</h2>
+
+          <ul class="class-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="class-card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-1.png" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Strength Training</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Forge resilience, sculpt muscles, and sharpen your mind with engaging strength training. Unlock your potential, one rep at a time.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-2.png" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-2.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Fat Burning</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Ignite your metabolism, torch calories, and sculpt a lean physique with dynamic fat-burning workouts. Unleash your body's full potential.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-3.png" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-3.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">HIIT (High-Intensity Interval Training)</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    Experience intense bursts of exercise followed by short rest periods to maximize calorie burn and boost metabolism.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+            <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle" data-aos="flip-up" data-aos-delay="100" data-aos-duration="1500">Our News</p>
+
+          <h2 class="h2 section-title text-center" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500">Latest Blog Feed</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy"
+                    alt="Going to the gym for the first time" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">11 Dec 2023</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="https://ro.co/weight-loss/alpine-ice-hack-for-weight-loss/" class="card-title">Alphine Ice Hack for Weight Loss: Does it Work?</a>
+                  </h3>
+
+                  <p class="card-text">
+                    The ice hack, or Alpine Ice Diet, is supposed to use cold temperatures to supercharge fat-burning, but the research behind this hack proves it’s not an efficient way to lose weight. 
+                  </p>
+
+                  <a href="https://ro.co/weight-loss/alpine-ice-hack-for-weight-loss/" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy"
+                    alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">13 Sep 2021</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="https://ro.co/weight-loss/benefits-of-exercise/" class="card-title">10 Benefits of Regular Excercise</a>
+                  </h3>
+
+                  <p class="card-text">
+                    There are many benefits of exercise we could talk about, but we’ll just focus on the 10 most important ones. From cholesterol to mental health to better sex, the benefits are far-reaching..
+                  </p>
+
+                  <a href="https://ro.co/weight-loss/benefits-of-exercise/" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-3.png" width="440" height="270" loading="lazy"
+                    alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">12 April 2021</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="https://www.healthline.com/health/fitness/how-to-gain-muscle"  class="card-title">How to Gain Muscle, No Matter Who You Are</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Muscle growth takes time, persistence, and a long-term commitment to the process. However, with proper training programs and adequate consumption of protein, it’s possible for most people.
+                  </p>
+
+                  <a href="https://www.healthline.com/health/fitness/how-to-gain-muscle" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+   <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="assets\images\logo.png">
+          </a>
+
+          <p class="footer-brand-text">
+            Sweat now, Shine later!
+          </p>
+
+          <div class="wrapper">
+
+            <img src="./assets/images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+
+              <li>
+                <p class="footer-brand-title">Monday - Friday</p>
+
+                <p>8:00Am - 5:00Pm</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Classes</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              4000 Lopez Jaena St, San Pablo City, Laguna
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+
+              <a href="tel:+915552348765" class="footer-link">+63 995 163-6851</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:services@fitlife.com" class="footer-link">gymbuddy@gmail.com</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 Gym Buddy!. All Rights Reserved By <a href="#" class="copyright-link">Gym Buddy!</a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Condition</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- 
+    - Animation On Scroll
+  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
